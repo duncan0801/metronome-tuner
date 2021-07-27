@@ -15,12 +15,13 @@
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "isolatedModules": true, // Unconditionally emit imports for unresolved files
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["node_modules", "build"] // *** The files to not type check ***
 }
